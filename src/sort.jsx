@@ -15,7 +15,7 @@ var p;
 
 let slides = [
     <div className="car" >
-     <h1>Merge Sort Algorithm</h1>
+     <h1>Merge Sort</h1>
      <p>The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm. In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner.</p>
      <h1>Time Complexity</h1>
      <p><strong>Worst Case : </strong>O(Nlog(N))</p>
