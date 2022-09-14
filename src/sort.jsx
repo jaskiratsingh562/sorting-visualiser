@@ -8,14 +8,16 @@ import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 let arr = [];
 let div_id = [];
-var speed = 0;    
 var c_delay=0;
 var size = 10;
 var p;
+var cspeed = 0;
+var csize = 0;
+
 
 let slides = [
     <div className="car" >
-     <h1>Merge Sort Algorithm</h1>
+     <h1>Merge Sort</h1>
      <p>The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm. In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner.</p>
      <h1>Time Complexity</h1>
      <p><strong>Worst Case : </strong>O(Nlog(N))</p>
@@ -56,8 +58,8 @@ function SortVisual(){
     c_delay = 0;
     // const [flag,setflag] = useState(false);
     const [carr,setarr] = useState(arr);
-    const [cspeed,setspeed]  = useState(speed);
-    const [csize,setsize] = useState(size);
+    // const [cspeed,setspeed]  = useState(speed);
+    // const [csize,setsize] = useState(size);
     var delay_time  = 10000/(Math.floor(size/10)*cspeed);
 
     // function flagchange(){
@@ -75,13 +77,14 @@ function SortVisual(){
     }
 
     function inputEvent1(value){
-        speed = value;
-        setspeed(value);
+        cspeed = value;
+        // setspeed(value);
         return value;
     }
 
     function inputEvent2(value){
-        setsize(value);
+        csize = value;
+        // setsize(value);
         return csize;
     }
 
@@ -284,7 +287,6 @@ function SortVisual(){
                         <br></br>
                         <br></br>
                         <Slider
-                            
                             defaultValue={50}
                             getAriaValueText={inputEvent1}
                             aria-labelledby="discrete-slider-always"
@@ -295,7 +297,6 @@ function SortVisual(){
                         <br></br>
                         <br></br>
                         <Slider
-                            
                             defaultValue={0}
                             max={60}
                             getAriaValueText={inputEvent2}
