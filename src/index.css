@@ -41,8 +41,14 @@ h1{
     position: static;
     float :left;
     margin:2px;
-    width: 9.222px;
+    padding-left: 18px;
+    padding-top: 4px;
+    /* padding-right: 0; */
+    /* width: 9.222px; */
+    width:15px;
     border-radius: 10px;
+    writing-mode: vertical-rl;
+    /* text-orientation: mixed; */
 }
 .buttons{
     align-content: center;
